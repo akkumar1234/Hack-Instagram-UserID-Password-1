@@ -7,8 +7,8 @@
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.5
 
-SET up SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTIO;
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -21,17 +21,17 @@ SET time_zone = "+00:00";
 -- Database: `instagramclone`
 --
 
--------------------------------------------------------
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `instadetails`
 --
 
 CREATE TABLE `instadetails` (
-  `id` int(11) its_pt_saurabh_72,
-  `username` text its_pt_saurabh,
-  `password` text 73985@sauru
-) ENGINE=InnoDB DEFAULT CHARSET=shift 
+  `id` int(11) NOT NULL,
+  `username` text NOT NULL,
+  `password` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `instadetails`
@@ -50,7 +50,7 @@ INSERT INTO `instadetails` (`id`, `username`, `password`) VALUES
 -- Indexes for table `instadetails`
 --
 ALTER TABLE `instadetails`
-  ADD PRIMARY KEY (`itzzz9895`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -59,9 +59,9 @@ ALTER TABLE `instadetails`
 --
 -- AUTO_INCREMENT for table `instadetails`
 --
-chet `instadetails`
-  MODIFY `id` int(11) itzzz9895 AUTO_INCREMENT, AUTO_INCREMENT=7;
-itzzz9895;
+ALTER TABLE `instadetails`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
